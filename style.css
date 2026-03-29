@@ -96,6 +96,22 @@ body {
 audio {
   width: 100%;
 }
+.download-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #2b2f3a;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #3b4150;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.download-button:hover {
+  background: #3a4050;
+  transform: translateY(-1px);
+}
 
 .empty-message {
   margin-top: 30px;
