@@ -71,10 +71,15 @@ function createAudioCard(sound) {
     <article class="sound-card">
       <h3 class="sound-name">${sound.title}</h3>
       <p class="sound-meta">${sound.category}</p>
+
       <audio controls preload="none">
         <source src="${sound.file}" type="audio/wav">
         Your browser does not support the audio element.
       </audio>
+
+      <a class="download-button" href="${sound.file}" download>
+        Download
+      </a>
     </article>
   `;
 }
