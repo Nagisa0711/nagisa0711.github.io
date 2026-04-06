@@ -156,13 +156,6 @@ const audioData = [
     category: "paper"
   },
   {
-    title: "turn the page",
-    description: "ページをめくる音",
-    file: "audio/stationery/paper/turn the page.wav",
-    tags: ["#stationery", "#paper", "#page", "#turn", "#紙", "#捲る"],
-    category: "paper"
-  },
-  {
     title: "tear paper",
     description: "紙を破る音",
     file: "audio/stationery/paper/tear paper.wav",
@@ -181,6 +174,13 @@ const audioData = [
     description: "紙を破る音の別テイク",
     file: "audio/stationery/paper/tear paper3.wav",
     tags: ["#stationery", "#paper", "#tear", "#紙", "#破る"],
+    category: "paper"
+  },
+   {
+    title: "turn the page",
+    description: "ページをめくる音",
+    file: "audio/stationery/paper/turn the page.wav",
+    tags: ["#stationery", "#paper", "#page", "#turn", "#紙", "#捲る"],
     category: "paper"
   },
   {
