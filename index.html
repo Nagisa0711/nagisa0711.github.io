@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5ZFCDFX36"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-Q5ZFCDFX36');
-</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Sound Library</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>音源配布サイト</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1>Free Sound Library</h1>
-    <p class="subtitle">Stationery sound collection</p>
+  <header class="topbar">
+    <h1>音源配布サイト</h1>
+    <p>ハッシュタグ検索 / 最新欄 / カテゴリ別表示</p>
   </header>
 
   <main class="container">
-    <div class="top-bar">
+    <section class="search-box">
       <input
         type="text"
         id="searchInput"
-        placeholder="Search sounds..."
-        aria-label="Search sounds"
-      >
-    </div>
+        placeholder="検索 例: #紙 #破る #捲る"
+      />
+    </section>
 
-    <div id="soundLibrary"></div>
+    <section class="section-block">
+      <div class="section-title-row">
+        <h2>最新欄</h2>
+        <span class="section-sub">最新の音源がここに表示されます</span>
+      </div>
+      <div id="latestList" class="card-grid"></div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-title-row">
+        <h2>カテゴリ別</h2>
+        <span class="section-sub">分類済みの音源</span>
+      </div>
+      <div id="categorySections"></div>
+    </section>
   </main>
 
   <script src="script.js"></script>
